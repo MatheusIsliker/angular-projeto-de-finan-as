@@ -1,0 +1,53 @@
+<p>formulario works!</p>
+<h2>{{ cadastro }}</h2>
+
+<form [formGroup]="forms">
+
+    <label for="email">email</label>
+    <input type="email" formControlName="email">
+    <br>
+    <br>
+    <label for="senha">senha</label>
+    <input type="password" formControlName="senha" maxlength="10">
+    <br>
+    <br>
+    <br>
+    <div>
+        <label for="estados">estados</label>
+        <select name="estados" id="estados" formControlName="estado">
+            <option *ngFor="let estado of recebeDados" [value]="estado.Nome">{{ estado.Nome }}</option>
+        </select>
+    </div>
+    <input type="file" for=""> selecionar arquivo
+    <br>
+    <br>
+    <br>
+    <input type="date">
+</form>
+
+
+<p>agora tenho um melhor escritorio para estudar e trabalha</p>
+
+
+<app-forms-filho [value]="value"></app-forms-filho>
+<button (click)="0">veja</button>
+
+<table class="table_main">
+
+    <div class="trs">
+        <tr class="super" colspan="1">Super Nintendo</tr>
+        <tr class="play_1" colspan="1">Playstation 1</tr>
+        <tr class="play_2" colspan="1">Playstation 2</tr>
+    </div>
+
+    <div class="jogos_lista">
+        <td>
+
+            <div *ngFor="let jogostops of jogos" colspan="2" class="jogos"> {{ jogostops.jogo }}</div>
+            <div *ngFor="let jogosplay of jogosPlay" class="jogosplay"> {{ jogosplay.jogo }} </div>
+
+        </td>
+    </div>
+
+</table>
+

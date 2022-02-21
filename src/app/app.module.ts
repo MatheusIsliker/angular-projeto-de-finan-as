@@ -8,7 +8,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
-
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api'
+import { InmemoryDataBase } from './in-memory-database'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientInMemoryWebApiModule.forRoot(InmemoryDataBase),
   ],
   exports: [
     MatButtonModule

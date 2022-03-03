@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jogos": {
+    "Finanças": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/jogos",
+            "outputPath": "dist/Finanças",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -78,18 +78,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "jogos:build"
+            "browserTarget": "Finanças:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "jogos:build:production"
+              "browserTarget": "Finanças:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jogos:build"
+            "browserTarget": "Finanças:build"
           }
         },
         "test": {
@@ -127,18 +127,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "jogos:serve"
+            "devServerTarget": "Finanças:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "jogos:serve:production"
+              "devServerTarget": "Finanças:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "jogos",
+  "defaultProject": "Finanças",
   "cli": {
     "analytics": "ca7c045d-3f6c-4cb1-bdfb-6d3bc3d6f403"
   }

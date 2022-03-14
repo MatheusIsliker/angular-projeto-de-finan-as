@@ -22,7 +22,7 @@ export class CategoryService {
   }
 
   public getById(id: number): Observable<Category> {
-    const url = `${this.apiPath}/${id}`
+    const url = `${this.apiPath}/${id}`;
 
     return this.http.get(url).pipe(
       catchError(this.handleError),
